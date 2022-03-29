@@ -1,0 +1,644 @@
+<html>
+<head>
+    <style>
+        img {
+            max-width: 100%;
+        }
+
+        body {
+            font-family: Arial;
+            font-size: 15px;
+            line-height: 27px;
+        }
+
+        .Logo_immage {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            padding: 5px;
+        }
+
+        .menu_list_banner {
+            list-style: none;
+            padding: 10px 10px;
+            box-sizing: border-box;
+        }
+
+        .menu_list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            margin: 10px;
+            text-decoration: none;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+        }
+
+        .link_menu_list {
+            color: #0D3B66;
+            text-transform: uppercase;
+            margin: 0px 20px;
+            text-decoration: none;
+            padding: 15px 45px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        .img_menulist {
+            position: absolute;
+            left: 13%;
+            padding: 4px;
+            text-align: center;
+            width: 40px;
+        }
+
+        .menu_list:hover {
+            text-decoration: underline;
+            transform: translate(0,-6px);
+            box-shadow: 10px 10px 10px rgba(17, 64, 234, 0.25);
+            font-size: 1.1em;
+        }
+
+        .titolo_inserzione {
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+            color: #0D3B66;
+            font-size: 2em;
+        }
+
+            .titolo_inserzione hr {
+                border: 0;
+                height: 4px;
+                background-color: #0D3B66;
+                width: 80%;
+                margin-left: auto;
+            }
+
+        .descrizione {
+            padding: 15px;
+            margin: 10px;
+            text-decoration: none;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            margin-bottom: 0;
+            background-color: ghostwhite;
+        }
+
+        .descrizione_banner {
+            padding: 20px;
+            margin: 20px;
+            text-align: left;
+            font-size: 1.5em;
+            color: gray;
+            font-weight: bold;
+        }
+
+            .descrizione_banner hr {
+                border: 0;
+                height: 3px;
+                background-color: royalblue;
+                width: 50%;
+                margin-left: 30px;
+            }
+
+        .descrizione p {
+            padding: 0px;
+            padding-top: 0px;
+            padding-left: 30px;
+            text-align: left;
+            margin-left: 10px;
+            margin-right: 5px;
+            margin-bottom: 70px;
+            font-size: 1.1em;
+            color: #000000;
+            font-weight: normal;
+        }
+
+        .img_prodotto {
+            display: flex;
+            position: static;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 9px;
+            padding: 9px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            background-color: ghostwhite;
+            /*background-color: white;*/
+        }
+
+            .img_prodotto img {
+                display: block;
+                position: static;
+                margin-left: auto;
+                margin-right: auto;
+                /* margin-top: 20px;*/
+                width: 90%;
+                border-radius: 30px;
+            }
+
+
+        .img_prodotto_2 {
+            display: flex;
+            position: static;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 9px;
+            padding: 9px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+            background-color: ghostwhite;
+        }
+
+            .img_prodotto_2 img {
+                display: block;
+                position: static;
+                width: 80%;
+                border-radius: 30px;
+            }
+
+        hr {
+            border: 0;
+            height: 4px;
+            background-color: #0D3B66;
+            width: 80%;
+            margin-left: auto;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 5px;
+        }
+
+        .row {
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+            .row div {
+                margin: 30px;
+                width: 70%;
+                height: 90%;
+                background: #FFFFFF;
+                box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+                border-radius: 12px;
+                margin: 10px 20px;
+                padding: 10px 20px;
+                align-self: normal;
+                flex-direction: column;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .row h1 {
+                color: white;
+                font-size: 1.5em;
+                border-radius: 12px;
+                font-family: Merriweather,sans-serif;
+            }
+
+            .row nav {
+                display: flex;
+                width: 80%;
+                height: 80%;
+                margin: 20px;
+                padding: 35px 20px;
+                text-align: center;
+                background-color: #0D3B66;
+                justify-content: center;
+                align-items: center;
+                border-radius: 30px;
+            }
+
+            .row img {
+                width: 150px;
+                height: 150px;
+                padding: 20px;
+            }
+
+        .sezione_servizio_contatto {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 5px;
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-top: 20px;
+            text-decoration: none;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+        }
+
+            .sezione_servizio_contatto a {
+                position: static;
+                color: #0D3B66;
+                text-transform: uppercase;
+                margin: 0 0px;
+                text-decoration: none;
+                padding: 15px 35px;
+                font-size: 1.3em;
+                font-weight: bold;
+            }
+
+            .sezione_servizio_contatto:hover {
+                text-decoration: underline;
+                transform: translate(0,-6px);
+                box-shadow: 10px 10px 10px rgba(17, 64, 234, 0.25);
+                font-size: 1.1em;
+            }
+
+        .img_contatto {
+            width: 50px;
+            height: 50px;
+        }
+
+        .blocco_inferiore h2 {
+            font-size: 1.5em;
+            padding: 10px;
+            color: #0D3B66;
+        }
+
+        .blocco_inferiore {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+            border-radius: 30px;
+        }
+
+            .blocco_inferiore p {
+                font-size: 1.3em;
+                padding: 20px;
+            }
+
+        @media screen and (min-width:600px) {
+            .Logo_immage {
+                width: 30%;
+            }
+
+            .img_menulist {
+                width: 50px;
+                left: 18%;
+            }
+
+            .sezione_centrale {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .descrizione p {
+                padding: 0px;
+                padding-top: 0px;
+                padding-left: 30px;
+                text-align: left;
+                margin-left: 10px;
+                margin-right: 15px;
+                margin-bottom: 70px;
+                font-size: 1.4em;
+            }
+
+            .row div {
+                margin: 30px;
+                width: 40%;
+                height: 90%;
+            }
+        }
+
+        @media screen and (min-width:1000px) {
+            .Logo_immage {
+                width: 14%;
+            }
+
+            .menu_list_banner {
+                display: flex;
+                justify-content: center;
+            }
+
+            .menu_list {
+                flex-direction: row;
+                align-items: center;
+                position: static;
+                justify-content: center;
+                margin: 0px 40px 0px 40px;
+                text-decoration: none;
+                box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+                border-radius: 35px;
+            }
+
+            .link_menu_list {
+                padding: 20px;
+            }
+
+            .img_menulist {
+                display: block;
+                position: static;
+                margin-left: 40px;
+            }
+
+            .titolo_inserzione hr {
+                width: 50%;
+            }
+
+            .sezione_centrale {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 50px;
+            }
+
+            .descrizione {
+                padding: 17px;
+                margin: 10px;
+                position: relative;
+                margin-bottom: 0;
+                height: 800px;
+                width: 600px;
+            }
+
+            .descrizione_banner {
+                padding: 20px;
+                margin: 20px;
+                text-align: left;
+                font-size: 1.5em;
+                color: royalblue;
+                font-weight: bold;
+            }
+
+                .descrizione_banner hr {
+                    border: 0;
+                    height: 3px;
+                    background-color: gray;
+                    width: 50%;
+                    margin-left: 30px;
+                }
+
+            .descrizione p {
+                padding: 30px;
+                padding-top: 0px;
+                padding-left: 50px;
+                text-align: left;
+                margin-left: 20px;
+                margin-right: 40px;
+                margin-bottom: 70px;
+            }
+
+            .img_prodotto {
+                display: flex;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                /* margin-right: -50px;*/
+                margin-left: -50px;
+                margin-top: 15px;
+                width: 700px;
+                height: 700px;
+            }
+
+                .img_prodotto hr {
+                    display: none;
+                }
+
+            .img_prodotto_2 {
+                display: flex;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                margin-left: -50px;
+                /* margin-right: -30px;*/
+                margin-top: 15px;
+                /* width: 700px;
+                                height: 700px;*/
+            }
+
+                .img_prodotto_2 hr {
+                    display: none;
+                }
+
+
+
+
+            .row div {
+                width: 250px;
+                height: 500px;
+                margin: 10px 30px;
+                padding: 15px 30px;
+            }
+
+            .sezione_servizio_contatto {
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 5px;
+                margin-left: 35%;
+                margin-right: 35%;
+                margin-top: 50px;
+            }
+
+            .blocco_inferiore {
+                position: relative;
+                text-align: center;
+                padding: 20px;
+                background-color: white;
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+    <style>
+        body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+            blockquote:before, blockquote:after, q:before, q:after {
+                content: '';
+                content: none;
+            }
+        /* remember to define focus styles! */
+
+        :focus {
+            outline: 0;
+        }
+        /* remember to highlight inserts somehow! */
+
+        ins {
+            text-decoration: none;
+        }
+
+        del {
+            text-decoration: line-through;
+        }
+        /* tables still need 'cellspacing="0"' in the markup */
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script>var descGaugeInfo = { descST: (new Date()).getTime() };</script>
+    <script type="text/javascript">
+        window.onerror = function (message, url, line) {
+            return true;
+        };
+    </script>
+
+    <script type="text/javascript">
+        try {
+            var jsonObj = {};
+            var hashParam = document.location.hash;
+            if (hashParam && hashParam.length > 0) {
+                hashParam = decodeURI(hashParam.replace('#', ''));
+            }
+            if (hashParam && typeof (hashParam) === 'string') {
+                jsonObj = JSON.parse(hashParam);
+            }
+            if (jsonObj && jsonObj.jsUrl) {
+                var jsUrl = jsonObj.jsUrl;
+                var script = document.createElement('script');
+                if (jsUrl.indexOf('//') != -1) {
+                    script.src = jsUrl;
+                } else {
+                    script.src = '//ir.ebaystatic.com/rs/v/' + jsUrl + '.js';
+                }
+                script.defer = true;
+                document.head.appendChild(script);
+            }
+            if (jsonObj && jsonObj.title) {
+                var title = jsonObj.title;
+                document.title = title;
+            }
+        } catch (e) {
+
+        }
+    </script>
+
+</head>
+<body>
+    <table align="center" style="border-spacing: 0px; width: 100%;">
+        <tbody>
+            <tr>
+                <td>
+                    <div id="ds_div">
+                        <font rwr="1" size="4" style="font-family:Arial">
+
+                            <div class="blocco_principale">
+                                <img alt="Logo_img" class="Logo_immage" src="https://lirp.cdn-website.com/751c9a29/dms3rep/multi/opt/1-275w.jpg">
+                                <div class="menu">
+                                    <ul class="menu_list_banner">
+                                        <li class="menu_list">
+                                            <img class="img_menulist" src="https://imagizer.imageshack.com/img922/1627/TACHzO.png" alt="Shop free icon" title="Shop free icon">
+                                            <a class="link_menu_list" href="https://www.ebay.it/sch/lucasaghi87/m.html?_trksid=p3692" _sp="p2545226.m2531.l4584" target="_blank">Visita il negozio</a>
+                                        </li>
+                                        <li class="menu_list">
+                                            <img class="img_menulist" src="https://imagizer.imageshack.com/img924/170/LJ1I0L.png" alt="Rating free icon" title="Rating free icon">
+                                            <a class="link_menu_list" href="https://feedback.ebay.it/fdbk/feedback_profile/lucasaghi87" target="_blank">Feedback</a>
+                                        </li>
+                                        <li class="menu_list">
+                                            <img class="img_menulist" src="https://imagizer.imageshack.com/img924/7619/NAvCSM.png" alt="Email free icon" title="Email free icon">
+                                            <a class="link_menu_list" href="https://www.ebay.it/contact/sendmsg?&amp;recipient=lucasaghi87" target="blank">Contattaci</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="titolo_inserzione">
+
+                                    <h1>Porta cellulare per Alfa Romeo Giulietta<br><hr> </h1>
+                                </div>
+                            </div>
+                            <div class="sezione_centrale">
+
+
+                                <div class="descrizione">
+                                    <span class="descrizione_banner">Descrizione <hr> </span>
+                                    <p>
+                                        Porta Cellulare, porta oggetti, porta smartphone xxl per Alfa Romeo Giulietta.<br><br>
+                                        Si installa in meno 10 secondi nel tunnel centrale.<br><br>
+                                        Non nasconde il pulsante del DNA.<br><br>
+                                        Il telefono non scivola e non si graffia grazie all'adesivo resinato che crea un effetto ventosa con il cellulare.<br>
+                                        <span style="font-size: 26.1333px;">Disponibile in piu' di 11 grafiche diverse!<br></span>
+                                        Versione base SENZA connettori usb e SENZA ricarica wireless.
+                                        Specificare tramite messaggio la grafica che si desidera.<br>
+                                        Se desiderate quello con ricarica wireless <a href="https://www.ebay.it/itm/154759838241?hash=item240867ba21:g:H7kAAOSwV9tiDNhP" target="blank">clicca qui</a>.<br>
+                                        <br><span class="descrizione_banner">
+                                            DIFFIDATE da quelli che a poco prezzo in estate si piegano! Il nostro e' testato in forno climatico fino a 90 gradi senza deformazioni.
+                                        </span>
+
+                                    <p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>
+                                </div>
+                                <div class="img_prodotto">
+                                    <img src="https://i.ebayimg.com/images/g/WckAAOSwP4dg0b7N/s-l1600.jpg" alt="Image_prodotto" title="Image_prodotto"> <hr>
+                                </div>
+                                <div class="img_prodotto_2">
+                                    <img src="https://imagizer.imageshack.com/v2/1024x768q90/922/MIx6Fx.jpg" alt="Image_prodotto" title="Image_prodotto"> <hr>
+                                </div>
+                            </div>
+                            <!-- ############################################################### ################################################################# ############################################################################################################################################### ##################################-->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="broken_gear_cart">
+                                        <img src="https://imagizer.imageshack.com/img922/9208/swEamv.png" alt="service" title="broken_gear" class="img_broken_gear"> <nav><h1>Vorresti personalizzare la Grafica? </h1> </nav>
+                                    </div>
+                                    <div class="collection_cart">
+                                        <img src="https://imagizer.imageshack.com/img924/7619/NAvCSM.png" alt="service" title="collection" class="img_collection"> <nav><h1>Contattaci e cercheremo di realizzare la tua Idea </h1> </nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sezione_servizio_contatto"> <img class="img_contatto"  ="" src="https://imagizer.imageshack.com/img924/7619/NAvCSM.png" alt="Email free icon" title="Email free icon"> <a href="https://www.ebay.it/contact/sendmsg?&amp;recipient=lucasaghi87" target="blank">Contattaci</a> </div> <br>
+                            <div class="blocco_inferiore">
+                                <div class="Soddisfazione_del_cliente">
+                                    <h2>Garanzia su tutti i nostri prodotti acquistati</h2>
+                                    <hr> <p>
+                                        Ci accomuna la voglia di distinguerci dalla massa, proprio per questo ciascuno dei nostri prodotti può essere personalizzato.<br>
+                                        Le nostre Etichette adesive sono perfette per ogni tipo di attività e passione, inoltre sono resistenti all'acqua e a qualsiasi altro agente atmosferico.<br>
+
+                                        Ci teniamo a garantire un servizio veloce e prodotti di qualità a un prezzo conveniente. <br>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </font>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table><span id="closeHtml"></span>
+    <script type="text/javascript">
+        var _rfr = 'https://www.ebay.it/';
+    </script>
+    <script src="https://ir.ebaystatic.com/rs/v/1yzqmzxk3a3utciscis2t10n1uu.js" type="text/javascript"></script>
+</body>
+</html>
